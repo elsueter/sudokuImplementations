@@ -45,3 +45,9 @@ target_link_libraries(sudoku PRIVATE Threads::Threads)
 #-----------------------------------------------------------------------------------------
 
 file(COPY src/index.html DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+
+file(COPY src/shellScripts/deploy.sh DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+
+file(COPY src/shellScripts/kill.sh DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+
+file(COPY src/shellScripts/restart.sh DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
